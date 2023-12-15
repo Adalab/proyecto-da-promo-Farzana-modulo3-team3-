@@ -13,6 +13,7 @@ alter table employees modify column employee_number INT NULL;
 alter table employees drop column employee_number;
 alter table employees modify column marital_status VARCHAR (50) NULL;
 alter table employees rename column MyUnknownColumn to id;
+alter table employees add PRIMARY KEY (`id`);
 
 CREATE TABLE employee_details(
 	employee_number			INT PRIMARY KEY,
@@ -31,6 +32,7 @@ alter table employee_details modify column education INT NOT NULL;
 alter table employee_details modify column total_working_years FLOAT NULL;
 alter table employee_details modify column num_companies_worked INT NOT NULL;
 alter table employee_details rename column MyUnknownColumn to id;
+alter table employee_details add PRIMARY KEY (`id`);
 
 CREATE TABLE company_relationship(
     attrition 			  		     CHAR(10),
@@ -46,6 +48,7 @@ alter table company_relationship MODIFY COLUMN attrition CHAR(10) NOT NULL;
 alter table company_relationship MODIFY COLUMN years_at_company INT NOT NULL;
 alter table company_relationship MODIFY COLUMN years_since_last_promotion INT NOT NULL;
 alter table company_relationship MODIFY COLUMN years_with_curr_manager INT NOT NULL;
+alter table company_relationship add PRIMARY KEY (`id`);
 
 
 CREATE TABLE satisfaction(
@@ -65,6 +68,7 @@ alter table satisfaction modify column job_involvement INT NOT NULL;
 alter table satisfaction modify column work_life_balance INT NULL;
 alter table satisfaction modify column performance_rating INT NULL;
 alter table satisfaction rename column MyUnknownColumn to id;
+alter table satisfaction add PRIMARY KEY (`id`);
 
 
 CREATE TABLE job_role(
@@ -84,6 +88,7 @@ alter table job_role modify column job_level INT NOT NULL;
 alter table job_role modify column job_role INT NOT NULL;
 alter table job_role modify column stock_option_level INT NOT NULL;
 alter table job_role rename column MyUnknownColumn to id;
+alter table job_role add PRIMARY KEY (`id`);
 
 
 CREATE TABLE conditions(
@@ -95,8 +100,9 @@ CREATE TABLE conditions(
 );
 alter table conditions drop column business_travel;
 alter table conditions drop column over_time;
-alter table conditions add column id INT AUTO_INCREMENT  primary key NOT NULL;
+alter table conditions modify column id INT AUTO_INCREMENT  primary key NOT NULL;
 alter table conditions rename column MyUnknownColumn to id;
+alter table conditions add PRIMARY KEY (`id`);
 
 
 CREATE TABLE salary (
@@ -114,5 +120,6 @@ alter table salary add column id INT AUTO_INCREMENT  primary key NOT NULL;
 alter table salary change column `daily_rate` `hourly_rate` FLOAT NOT NULL;
 alter table salary modify column monthly_rate INT NOT NULL;
 alter table salary modify column percent_salary_hike INT NOT NULL;
+alter table salary add PRIMARY KEY (`id`);
 
  
