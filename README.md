@@ -22,3 +22,5 @@ El objetivo principal de este proyecto es llevar a cabo un análisis exhaustivo 
 ## Programadoras y analistas
 
 - Tam García, @Tamgamart
+- Zahara, @ZaharaPB
+- Patricia, @patriciabll
