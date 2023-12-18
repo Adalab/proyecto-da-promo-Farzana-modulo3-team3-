@@ -1,6 +1,6 @@
 # proyecto-da-promo-Farzana-modulo3-team3-OUTLANDERS
 
-# README - Proyecto de PAIR Programming
+# Proyecto Transformando el Talento
 
 Este repositorio contiene el código y la documentación para un proyecto desarrollado que se centra en el análisis de datos utilizando Python y diversas librerías, así como la implementación de técnicas estadísticas, pruebas de hipótesis y visualización de datos.
 
